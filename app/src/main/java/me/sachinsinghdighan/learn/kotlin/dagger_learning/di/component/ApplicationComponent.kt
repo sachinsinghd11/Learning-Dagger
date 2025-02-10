@@ -8,10 +8,11 @@ import me.sachinsinghdighan.learn.kotlin.dagger_learning.data.local.FileStorageS
 import me.sachinsinghdighan.learn.kotlin.dagger_learning.data.remote.HttpClient
 import me.sachinsinghdighan.learn.kotlin.dagger_learning.data.remote.NetworkService
 import me.sachinsinghdighan.learn.kotlin.dagger_learning.di.ApplicationContext
+import me.sachinsinghdighan.learn.kotlin.dagger_learning.di.ApplicationScope
 import me.sachinsinghdighan.learn.kotlin.dagger_learning.di.module.ApplicationModule
 import javax.inject.Singleton
 
-@Singleton
+@ApplicationScope
 @Component(modules = [ApplicationModule::class])
 interface ApplicationComponent {
     fun inject(application: MyApplication)
