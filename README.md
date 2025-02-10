@@ -1,2 +1,2 @@
 # Learning-Dagger
-Simple dagger project for learning
+Dagger project for learning
